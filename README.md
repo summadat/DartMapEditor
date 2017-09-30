@@ -2,7 +2,7 @@
 
 Usage:
 
-  Z - Scroll carousel left\n
+  Z - Scroll carousel left</br>
   X - Scroll carousel right\n
   L - Switch between "tiling mode" and "layering mode"\n
   E - Switch to "entity mode"
