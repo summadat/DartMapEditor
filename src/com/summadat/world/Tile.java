@@ -41,7 +41,6 @@ public class Tile {
 
     public void setWalkable(boolean b) {
         walkable = b;
-        System.out.println("Tile " + loc.getX() + " : " + loc.getY() + " nonwalkable!");
     }
 
     public int calculateX(Camera c) {

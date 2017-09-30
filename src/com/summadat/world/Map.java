@@ -24,7 +24,18 @@ public class Map {
 
     String name = "default";
 
+    public String getName() {
+        return name;
+    }
+
     public Map(int w, int h) {
+        width = w;
+        height = h;
+        tiles = new Tile[width][height];
+    }
+
+    public Map(String n, int w, int h) {
+        name = n;
         width = w;
         height = h;
         tiles = new Tile[width][height];
@@ -40,10 +51,9 @@ public class Map {
 
     public void save() {
         try {
-            Calendar c = Calendar.getInstance(TimeZone.getDefault());
-            String name = "maps/" + c.get(c.YEAR) + "-" + c.get(c.MONTH) + "-" + c.get(c.DAY_OF_MONTH) + "-" + c.get(c.MINUTE) + "-" + c.get(c.SECOND) + ".map";
-            System.out.println(name);
-            File file = new File(name);
+            String fname = "maps/_" + name + "_.map";
+            System.out.println(fname);
+            File file = new File(fname);
 
             if (file.createNewFile()){
                 System.out.println("File is created!");

@@ -8,8 +8,13 @@ import java.awt.image.BufferedImage;
 public class Sprite {
 
     BufferedImage image;
+
     public static int num = 0;
     private int id;
+
+    public Sprite() {
+    }
+
 
     public Sprite(BufferedImage i) {
         id = num;
