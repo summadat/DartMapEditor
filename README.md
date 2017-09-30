@@ -7,6 +7,7 @@ Features:</br>
 - Tile layering</br>
 - Setting non walkable tiles</br>
 - NPC placement</br>
+- Carousel style Tile/NPC sprite picker</br>
 - Saving/loading (Generates seperate files for tiles and NPC locations</br>
 </br>
 Usage:</br>
